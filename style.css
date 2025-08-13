@@ -11,6 +11,8 @@
 }
 
 
+
+
 @font-face {
     font-family: 'Aladini';
     src: url('./font/aladini.ttf') format('truetype');
@@ -45,6 +47,8 @@ body{
 .mainContent{
     padding-top: 10rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .sunImgDiv{
@@ -167,43 +171,50 @@ body{
 @media (max-width: 390px) {
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     .welcomeSection{
-        height: 40rem;
-        background-position-y: 1rem;
+        height: 18rem;
+        /* background-position-y: rem; */
     }
 
     .mainContent{
-        padding-top: 5rem;
+        padding-top: 2.5rem;
+    }
+
+    .titleCandleDiv{
+        gap: 0.5rem;
+    }
+    .titleCandleDiv h1 , .candleDiv {
+        margin-top: 1rem;
     }
 
     .invitationH1{
-        font-size: 1.2rem;
+        font-size: 0.6rem;
     }
 
     .sunImgDiv img{
-        width: 13rem;
+        width: 8rem;
         
     }
     .candleDiv img{
-        width: 2.2rem;
+        width: 1rem;
     }
 
     .invitationDiv img{
-        width: 18rem;
+        width: 10rem;
     }
 
     .buttonsDiv{
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .buttonsDiv .buttonYesLink img {
-        width: 7rem
+        width: 3rem
     }
 }
