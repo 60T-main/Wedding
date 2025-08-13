@@ -171,7 +171,7 @@ body{
 @media (max-width: 600px) {
 
     h1 {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     h2 {
@@ -179,7 +179,7 @@ body{
     }
 
     .welcomeSection{
-        height: 18rem;
+        height: 20rem;
         /* background-position-y: rem; */
     }
 
@@ -191,15 +191,15 @@ body{
         gap: 0.5rem;
     }
     .titleCandleDiv h1 , .candleDiv {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
     .invitationH1{
-        font-size: 0.4rem;
+        font-size: 0.7rem;
     }
 
     .sunImgDiv img{
-        width: 4rem;
+        width: 6.5rem;
         
     }
     .candleDiv img{
@@ -207,14 +207,15 @@ body{
     }
 
     .invitationDiv img{
-        width: 6rem;
+        width: 10rem;
     }
 
     .buttonsDiv{
         gap: 2.5rem;
+        margin-top: -0.5rem
     }
 
     .buttonsDiv .buttonYesLink img {
-        width: 2rem
+        width: 3.2rem
     }
 }
