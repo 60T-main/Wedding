@@ -171,21 +171,23 @@ body{
 @media (max-width: 450px) {
 
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
+
+    /* welcome section */
 
     .welcomeSection{
         height: 50rem;
-        background-position-y: 5rem;
-        background-size: 100% 70%;
+        background-position-y: 0cqh;
+        background-size: 100% 85%;
     }
 
     .mainContent{
-        padding-top: 10rem;
+        padding-top: 6rem;
     }
 
     .titleCandleDiv{
@@ -196,19 +198,19 @@ body{
     }
 
     .invitationH1{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .sunImgDiv img{
-        width: 11rem;
+        width: 14rem;
         
     }
     .candleDiv img{
-        width: 2rem;
+        width: 3rem;
     }
 
     .invitationDiv img{
-        width: 15rem;
+        width: 18.5rem;
     }
 
     .buttonsDiv{
@@ -217,6 +219,82 @@ body{
     }
 
     .buttonsDiv .buttonYesLink img {
-        width: 5.5rem
+        width: 7rem
     }
+
+    /* END of welcome section*/
+
+    /* info section */
+
+    .infoSection{
+    background-image: url(./images/border-full.png);
+    background-size: 100% 70%;
+    background-position: unset;
+    /* background-position-y: -1rem; */
+    background-repeat: no-repeat;
+    height: 65rem;
+
+}
+
+    .infoMainContent{
+    padding-top: 7rem;
+}
+.scheduleH1{
+    font-size: 2.5rem;
+}
+
+.scheduleImg{
+    max-width: 8rem;
+}
+
+.innerDiv{
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    margin-top: 0;
+}
+
+.scheduleTimeDiv{
+    display: flex;
+    flex-direction: column;
+}
+.scheduleDiv{
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.scheduleH2Div{
+    text-align: left;
+    margin-left: -1rem;
+}
+
+.locationDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+
+.scheduleH3{
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+    width: 1.5rem;
+}
+
+.pinLogoDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.pinLogo{
+    width: 1rem;
+    margin-top: 0.2rem;
+}
+
 }
