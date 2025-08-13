@@ -171,7 +171,7 @@ body{
 @media (max-width: 390px) {
 
     h1 {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     h2 {
@@ -195,11 +195,11 @@ body{
     }
 
     .invitationH1{
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
 
     .sunImgDiv img{
-        width: 8rem;
+        width: 4rem;
         
     }
     .candleDiv img{
@@ -207,7 +207,7 @@ body{
     }
 
     .invitationDiv img{
-        width: 10rem;
+        width: 6rem;
     }
 
     .buttonsDiv{
@@ -215,6 +215,6 @@ body{
     }
 
     .buttonsDiv .buttonYesLink img {
-        width: 3rem
+        width: 2rem
     }
 }
