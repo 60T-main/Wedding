@@ -162,3 +162,48 @@ body{
 
 
 
+/* media queries */
+
+@media (max-width: 390px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .welcomeSection{
+        height: 40rem;
+        background-position-y: 1rem;
+    }
+
+    .mainContent{
+        padding-top: 5rem;
+    }
+
+    .invitationH1{
+        font-size: 1.2rem;
+    }
+
+    .sunImgDiv img{
+        width: 13rem;
+        
+    }
+    .candleDiv img{
+        width: 2.2rem;
+    }
+
+    .invitationDiv img{
+        width: 18rem;
+    }
+
+    .buttonsDiv{
+        gap: 3rem;
+    }
+
+    .buttonsDiv .buttonYesLink img {
+        width: 7rem
+    }
+}
