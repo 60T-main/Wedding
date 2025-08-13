@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: 'Aladini';
+    src: url('./font/aladini.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+body{
+    background-color: beige;
+    font-family: 'Aladini', sans-serif;
+    color: #bb9d43;
+}
+
+/* WELCOME SECTION */
+
+.welcomeSection{
+    background-image: url(./images/border-full.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80rem;
+}
+
+.mainContent{
+    padding-top: 10rem;
+    position: relative;
+}
+
+.sunImgDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.sunImg{
+    width: 25rem;
+}
+
+.titleDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleCandleDiv{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: -2rem;
+}
+
+.candle{
+    width: 5.5rem;
+}
+
+.candle1{
+    transform: scaleX(-1);
+}
+
+.invitationH1Div{
+    display: flex;
+    justify-content: center;
+}
+
+.invitationH1{
+    font-size: 2.1rem;
+}
+
+.invitationDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.invitationImg{
+    width: 37rem;
+}
+
+.buttonsDiv{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: -2rem;
+}
+
+/* END OF WELCOME SECTION */
+
+/* INFO SECTION */
+
+.infoSection{
+    background-image: url(./images/border-full-rotated.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60rem;
+}
+
+.infoMainContent{
+    padding-top: 6rem;
+}
+.scheduleH1{
+    font-size: 3.3rem;
+}
+
+.scheduleDiv{
+    display: flex;
+    justify-content: center;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+.innerDiv{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+
+.scheduleH2Div{
+    text-align: center;
+    margin-top: -3rem;
+}
+
+.locationDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.scheduleH3{
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.pinLogo{
+    width: 2.5rem;
+    margin-top: -0.2rem;
+}
+
+
+
