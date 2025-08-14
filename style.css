@@ -140,13 +140,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -5rem;
+}
+
+.scheduleImg {
+    max-width: 25rem;
 }
 
 
 .scheduleH2Div{
     text-align: center;
-    margin-top: -3rem;
+    margin-top: 0rem;
 }
 
 .locationDiv {
@@ -154,7 +157,7 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .scheduleH3{
@@ -164,13 +167,82 @@ body{
 
 .pinLogoDiv{
     display: flex;
+    align-items: center;
 }
 
 .pinLogo{
     width: 2.5rem;
+    height: 2.5rem;
     margin-top: -0.2rem;
+
 }
 
+/* info content 2 */
+
+/* Info Section 2 */
+
+.infoSection2 {
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mainContentInfo {
+    /* margin-top: -10rem; */
+    display: flex;
+    padding-top: 0rem;
+    padding-left: 10rem;
+    gap: 2rem;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+    
+
+.infoImg {
+    width: 18rem;
+    
+}
+
+.infoTextDiv {
+    max-width: 28rem;
+}
+
+.infoTextDiv h2 {
+    font-size: 1.5rem;
+}
+
+.textAndSeparator {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.separator1 {
+    max-width: none;
+    max-height: none;
+    height: 100%;
+    margin-left: -2.5rem;
+}
+
+.separator2 {
+    max-width: none;
+    max-height: 4rem;
+    width: 60%;
+    margin-left: -2rem;
+    margin-top: -1rem;
+    margin-bottom: -1.5rem;
+}
 
 
 /* media queries */
@@ -244,7 +316,7 @@ body{
 }
 
     .infoMainContent{
-    padding-top: 7rem;
+    padding-top: 6.5rem;
     margin-left: 0;
 }
 .scheduleH1{
@@ -253,14 +325,14 @@ body{
 }
 
 .scheduleImg{
-    max-width: 12rem;
+    max-width: 9rem;
 }
 
 .innerDiv{
     flex-direction: row;
     justify-content: left;
     width: 100%;
-    margin-top: -3rem;
+    margin-top: 0rem;
 }
 
 .weddingDiv{
@@ -272,13 +344,13 @@ body{
 .scheduleTimeDiv{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
 }
 .scheduleDiv{
     flex-direction: column;
     margin-left: 2.5rem;
     justify-content: center;
     align-items: center;
+    margin-top: -1.5rem;
 }
 
 .weddingCeremonyDiv{
@@ -294,6 +366,10 @@ body{
 .scheduleH2Div{
     text-align: center;
     margin-left: -1rem;
+}
+
+.scheduleH2Div h2 {
+    font-size: 1.1rem;
 }
 
 .locationDiv {
@@ -318,6 +394,7 @@ body{
 
 .pinLogo{
     width: 1.5rem;
+    height: 1.5rem;
     margin-top: 0.1rem;
 }
 
@@ -327,13 +404,16 @@ body{
 
 .infoSection2{
     background-size: 100% 70%;
+    display: flex;
+    padding-bottom: 15rem;
 }
 
 .mainContentInfo{
     margin-top: -10rem;
     display: flex;
-    padding-top: 8rem;
-    padding-left: 3rem;
+    padding-top: 4rem;
+    padding-left: 0rem;
+    gap: 0;
 
 }
 
@@ -345,7 +425,11 @@ body{
     gap: 0.5rem;
 }
 
-.column div img {
+.columnRight{
+    margin-left: -1.5rem;
+}
+
+.infoImg {
     width: 10rem;
 }
 
@@ -353,6 +437,10 @@ body{
     max-width: 8rem;
     text-align: center;
     margin-left: -1.5rem;
+}
+
+.infoTextDiv h2 {
+    font-size: 0.8rem;
 }
 
 .textAndSeparator{
@@ -363,16 +451,18 @@ body{
 
 
 .separator1{
-    max-width: 4rem;
-    max-height: 10rem;
-    margin-left: -2.5rem;
+    max-width: 3rem;
+    max-height: 8rem;
+    margin-left: -2rem;
+    margin-right: 0.5rem;
 }
 
 .separator2{
     max-width: 8rem;
     margin-left: -2rem;
-    margin-top: -1rem;
+    margin-top: -2rem;
     margin-bottom: -1.5rem;
+    width: unset;
 }
 
 
