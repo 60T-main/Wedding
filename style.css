@@ -120,6 +120,7 @@ body{
 
 .infoMainContent{
     padding-top: 6rem;
+    margin-left: 4rem;
 }
 .scheduleH1{
     font-size: 3.3rem;
@@ -130,6 +131,7 @@ body{
     justify-content: center;
     overflow-x: clip;
     overflow-y: visible;
+    
 }
 
 .innerDiv{
@@ -150,6 +152,7 @@ body{
 .locationDiv {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 1rem;
     margin-top: 5rem;
 }
@@ -157,6 +160,10 @@ body{
 .scheduleH3{
     text-align: center;
     text-wrap: nowrap;
+}
+
+.pinLogoDiv{
+    display: flex;
 }
 
 .pinLogo{
@@ -175,7 +182,7 @@ body{
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* welcome section */
@@ -228,7 +235,7 @@ body{
 
     .infoSection{
     background-image: url(./images/border-full.png);
-    background-size: 100% 70%;
+    background-size: 100% 75%;
     background-position: unset;
     /* background-position-y: -1rem; */
     background-repeat: no-repeat;
@@ -238,20 +245,28 @@ body{
 
     .infoMainContent{
     padding-top: 7rem;
+    margin-left: 0;
 }
 .scheduleH1{
     font-size: 2.5rem;
+    margin: -1rem 0 2rem ;
 }
 
 .scheduleImg{
-    max-width: 8rem;
+    max-width: 12rem;
 }
 
 .innerDiv{
     flex-direction: row;
     justify-content: left;
     width: 100%;
-    margin-top: 0;
+    margin-top: -3rem;
+}
+
+.weddingDiv{
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding-right: 2rem;
 }
 
 .scheduleTimeDiv{
@@ -266,10 +281,14 @@ body{
     align-items: center;
 }
 
+.weddingCeremonyDiv{
+    margin-left: 2rem;
+}
+
 
 
 .scheduleH2Div{
-    text-align: left;
+    text-align: center;
     margin-left: -1rem;
 }
 
@@ -283,7 +302,7 @@ body{
 }
 
 .scheduleH3{
-    text-align: left;
+    text-align: center;
     text-wrap: wrap;
     font-size: 0.8rem;
 }
@@ -294,8 +313,7 @@ body{
 }
 
 .pinLogo{
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
     margin-top: 0.1rem;
 }
 
