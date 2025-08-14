@@ -182,7 +182,7 @@ body{
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     /* welcome section */
@@ -285,6 +285,10 @@ body{
     margin-left: 2rem;
 }
 
+.dinnerCeremonyDiv{
+    margin-left: 1.5rem;
+}
+
 
 
 .scheduleH2Div{
@@ -316,5 +320,62 @@ body{
     width: 1.5rem;
     margin-top: 0.1rem;
 }
+
+/* END OF INFO SESCTION */
+
+/* Info Section 2 */
+
+.infoSection2{
+    background-size: 100% 70%;
+}
+
+.mainContentInfo{
+    margin-top: -10rem;
+    display: flex;
+    padding-top: 8rem;
+    padding-left: 3rem;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.column div img {
+    width: 10rem;
+}
+
+.column .infoTextDiv {
+    max-width: 8rem;
+    text-align: center;
+    margin-left: -1.5rem;
+}
+
+.textAndSeparator{
+    display: flex;
+    flex-direction: row;    
+}
+
+
+
+.separator1{
+    max-width: 4rem;
+    max-height: 10rem;
+    margin-left: -2.5rem;
+}
+
+.separator2{
+    max-width: 8rem;
+    margin-left: -2rem;
+    margin-top: -1rem;
+    margin-bottom: -1.5rem;
+}
+
+
+
 
 }
