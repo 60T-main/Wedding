@@ -45,7 +45,7 @@ body{
 }
 
 .mainContent{
-    padding-top: 10rem;
+    padding-top: 15rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -56,8 +56,20 @@ body{
         justify-content: center;
         align-items: center;
 }
+
+.sunStar1{
+    margin-right: -4rem;
+}
+.sunStar2{
+    margin-left: -4rem;
+}
+
+.sunStar{
+    width: 10rem;
+}
+
 .sunImg{
-    width: 25rem;
+    width: 15rem;
 }
 
 .titleDiv{
@@ -96,14 +108,25 @@ body{
 }
 
 .invitationImg{
-    width: 37rem;
+    width: 32rem;
 }
 
 .buttonsDiv{
     display: flex;
     justify-content: center;
-    gap: 6rem;
-    margin-top: -2rem;
+    /* gap: 6rem; */
+    margin-top: -12rem;
+}
+
+.buttonsDiv img{
+    width: 25rem;
+}
+
+.buttonYesLink{
+    margin-right : -4rem;
+}
+.buttonNoLink{
+    margin-left : -4rem;
 }
 
 /* END OF WELCOME SECTION */
@@ -261,7 +284,7 @@ body{
 
     .welcomeSection{
         height: 50rem;
-        background-position-y: 0cqh;
+        background-position-y: 0;
         background-size: 100% 85%;
     }
 
@@ -281,7 +304,7 @@ body{
     }
 
     .sunImgDiv img{
-        width: 14rem;
+        width: 9.5rem;
         
     }
     .candleDiv img{
@@ -294,11 +317,14 @@ body{
 
     .buttonsDiv{
         gap: 2.5rem;
-        margin-top: -2rem
+        margin-top: -7rem
     }
 
     .buttonsDiv .buttonYesLink img {
-        width: 7rem
+        width: 15rem
+    }
+    .buttonsDiv .buttonNoLink img {
+        width: 15rem
     }
 
     /* END of welcome section*/
@@ -312,6 +338,8 @@ body{
     /* background-position-y: -1rem; */
     background-repeat: no-repeat;
     height: 65rem;
+
+    margin-top: -10rem;
 
 }
 
@@ -406,6 +434,7 @@ body{
     background-size: 100% 70%;
     display: flex;
     padding-bottom: 15rem;
+    margin-top: -18rem;
 }
 
 .mainContentInfo{
@@ -465,7 +494,42 @@ body{
     width: unset;
 }
 
+/* thanks section */
 
+.infoSection3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 65%;
+}
+
+.thanksDivParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25rem;
+}
+
+.thanksTextDivParent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -2rem;
+}
+
+.thanksTextDiv h2{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.thanksImgDiv img{
+    width: 19.5rem;
+}
+
+.cakeImgDiv{
+    margin-top: -3rem;
+}
 
 
 }
