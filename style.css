@@ -38,7 +38,7 @@ body{
 
 .welcomeSection{
     background-image: url(./images/border-full.png);
-    background-size: 45%;
+    background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
     height: 80rem;
@@ -233,7 +233,7 @@ body{
     
 
 .infoImg {
-    width: 16rem;
+    width: 20rem;
     
 }
 
@@ -244,7 +244,7 @@ body{
 
 
 .infoTextDiv h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .textAndSeparator {
@@ -285,7 +285,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: -6rem;
-    /* background-size: 100% 75%; */
+    background-size: 100% 85%;
 }
 
 .thanksDivParent {
@@ -598,13 +598,57 @@ body{
 
 
 
-@media (min-width: 1080px) {
-    .infoSection3{
-        background-size: 55% 75%;
+@media (min-width: 950px) {
+.welcomeSection{
+    background-size: 75%;
+}
+}
 
-    }
+.infoSection2 {
+    background-size: 100%;
+}
 
-    .welcomeSection{
-        background-size: 35%;
-    }
+@media (min-width: 1050px) {
+.welcomeSection{
+    background-size: 65%;
+}
+
+.infoSection2 {
+    background-size: 100%;
+}
+}
+@media (min-width: 1250px) {
+.welcomeSection{
+    background-size: 55%;
+}
+
+.infoSection3{
+    background-size: 100%;
+}
+
+
+}
+@media (min-width: 1450px) {
+.welcomeSection{
+    background-size: 45%;
+}
+
+.infoSection2 {
+    background-size: 95%;
+}
+
+.infoSection3 {
+    background-size: 80%;
+}
+
+
+}
+@media (min-width: 1700px) {
+.welcomeSection{
+    background-size: 36%;
+}
+
+.infoSection2 {
+    background-size: 80%;
+}
 }
