@@ -2,7 +2,7 @@ const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
 
 yesBtn.addEventListener('click', () => {yesButton()});
-noBtn.addEventListener('click', () => { });
+noBtn.addEventListener('click', () => { noButton()});
 
 
 const section1 = document.querySelector('.infoSection'),
@@ -11,8 +11,11 @@ const section1 = document.querySelector('.infoSection'),
 
 
 const thanksCard = document.querySelector('.thanksCard');
+const sorryCard = document.querySelector('.sorryCard');
+
 
 const music = new Audio('./audio/wedding.mp3');
+const sadMusic = new Audio('./audio/sad-music.mp3')
 const pauseButton = document.querySelector('.pauseButton')
 const playButton = document.querySelector('.playButton')
 pauseButton.addEventListener('click', () => {
@@ -25,10 +28,12 @@ playButton.addEventListener('click', () => {
 const loader = document.querySelector('.loaderDiv')
 const main = document.querySelector('.main')
 
-window.onload = () => {
-    loader.style.display = "none";
-    main.style.display = "block";
-}
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loader.style.display = "none";
+        main.style.display = "block";
+    }, 1000); 
+});
       
 function getName() {
     const params = new URLSearchParams(window.location.search);
@@ -68,7 +73,17 @@ function yesButton() {
       });
         
         thanksCard.style.setProperty("display", "none", "important");
-}, 3000); // time in milliseconds
+}, 5000); // time in milliseconds
+}
+
+
+function noButton() {
+
+    sadMusic.play()
+    sadMusic.volume = 0.2;
+    sorryCard.style.setProperty("display", "flex", "important");
+    sorryCard.classList.add('animate');
+
 }
 
 function musicFunc() {
@@ -81,7 +96,19 @@ function musicFunc() {
         pauseButton.style.setProperty("display", "flex", "important");
         playButton.style.setProperty("display", "none", "important");
     }
+
 }
+// function sadMusicFunc() {
+//     if (!sadMusic.paused) {
+//         sadMusic.pause();
+//         pauseButton.style.setProperty("display", "none", "important");
+//         playButton.style.setProperty("display", "flex", "important");
+//     } else {
+//         sadMusic.play();
+//         pauseButton.style.setProperty("display", "flex", "important");
+//         playButton.style.setProperty("display", "none", "important");
+//     }
+// }
 
 const guestName = getName()
 showName(guestName)

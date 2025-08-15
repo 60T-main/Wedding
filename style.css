@@ -16,7 +16,8 @@ main{
 }
 
 .loaderDiv{
-    display: block;
+    display: flex;
+    z-index: 1000;
 }
 
 
@@ -125,21 +126,33 @@ body{
     display: none !important;
 }
 
-.thanksCard{
+.thanksCard, .sorryCard{
     display: none;
-    background-color: pink;
+    flex-direction: column;
+    background-image: url(./images/card.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
-    height: 30rem;
-    border-radius: 15%;
+    width: 100%;
+    height: 100%;
+
     position: absolute;
     z-index: 1;
-    top: 12rem;
-    left: 25%;
+    top: 5%;
+    left: 0;
     /* transform: translate(-50%, -50%); */
     animation: bounce-in-top 1.5s both;
+}
+
+.thanksCardInner, .sorryCardInner{
+    margin-top: -5rem;
+}
+
+.thanksCard img, .sorryCardInner img {
+    width: 25rem;
 }
 
 
@@ -613,17 +626,6 @@ body{
         font-size: 0.8rem;
     }
 
-    /* thanks card */
-
-        .thanksCard {
-
-            width: 15rem;
-            height: 10rem;
-            border-radius: 45%;
-            position: absolute;
-            top: 15rem;
-            left: 20%;
-        }
 
     /* welcome section */
 
@@ -907,6 +909,37 @@ body{
     margin-top: -3rem;
 }
 
+        /* thanks card */
+    
+        .thanksCard, .sorryCard {
+    
+            /* width: 100%;
+            height: 100%; */
+            /* border-radius: 15%; */
+            /* position: absolute; */
+            top: -8rem;
+            left: 0%;
+            background-size: 100%;
+        }
+    
+.thanksCardInner, .sorryCardInner{
+    margin-bottom: -4rem;
+}
+
+.thanksCardInner img, .sorryCardInner img{
+    width: 7rem;
+    margin-bottom: -2rem;
+}
+
+
+.thanksCardInner h1, .sorryCardInner h1{
+    font-size: 1.5rem;
+    width: 9rem;
+}
+.sorryCardInner h1 {
+ width: 16rem;
+ margin-top: 1rem;
+}
 
 }
 
@@ -916,6 +949,12 @@ body{
 .welcomeSection{
     background-size: 75%;
 }
+
+.thanksCardInner img,
+.sorryCardInner img {
+    width: 12rem;
+}
+
 }
 
 
@@ -928,6 +967,21 @@ body{
 .cakeFlowersImgDesktop{
     width: 50rem;
 }
+
+.thanksCardInner, .sorryCardInner{
+    margin-bottom: -3rem;
+}
+
+.thanksCardInner img, .sorryCardInner img {
+    width: 12rem;
+    margin-bottom: -2.5rem;
+}
+
+.thanksCardInner h1, .sorryCardInner h1 {
+    font-size: 2.5rem;
+    width: 18rem;
+}
+
 }
 @media (min-width: 1250px) {
 .welcomeSection{
@@ -940,6 +994,16 @@ body{
 
 .cakeFlowersImgDesktop {
     width: 60rem;
+}
+
+.thanksCardInner img, .sorryCardInner img {
+    width: 18rem;
+    margin-bottom: -2rem;
+}
+
+.thanksCardInner h1, .sorryCardInner h1{
+    font-size: 2.5rem;
+    width: 25rem;
 }
 
 
@@ -958,12 +1022,19 @@ body{
     background-size: 85% 85%;
 }
 
+.thanksCardInner img, .sorryCardInner img{
+    width: 25rem;
+}
+
+
 
 }
 @media (min-width: 1700px) {
 .welcomeSection{
     background-size: 36%;
 }
+
+
 
 
 }
