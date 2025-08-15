@@ -45,7 +45,6 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         loader.style.display = "none";
         main.style.display = "block";
-        AOS.refresh();
     }, 2000); 
 });
       
@@ -159,11 +158,22 @@ function showSections(){
 
 
 // animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry.isIntersecting);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+        
+    });
+});
 
-  AOS.init({
-    duration: 1200,  // animation duration in ms
-    once: false       // only animate once (no repeat on scroll)
-  });
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((element) => observer.observe(element));
+
+
 
 const guestName = getName()
 showName(guestName)
