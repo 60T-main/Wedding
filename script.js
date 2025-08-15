@@ -26,7 +26,7 @@ const loader = document.querySelector('.loaderDiv')
 const main = document.querySelector('.main')
 
 window.onload = () => {
-    loader.style.display = "none"
+    loader.style.display = "none";
     main.style.display = "block";
 }
       
@@ -53,8 +53,7 @@ function showName(guestName) {
 function yesButton() {
     const sections = [section1, section2, section3];
 
-    music.play();
-    pauseButton.style.setProperty("display", "flex", "important");
+    musicFunc()
 
     thanksCard.style.setProperty("display", "flex", "important");
     thanksCard.classList.add('animate');
