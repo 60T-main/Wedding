@@ -11,6 +11,16 @@ const section1 = document.querySelector('.infoSection'),
 
 
 const thanksCard = document.querySelector('.thanksCard');
+
+const music = new Audio('./audio/wedding.mp3');
+const pauseButton = document.querySelector('.pauseButton')
+const playButton = document.querySelector('.playButton')
+pauseButton.addEventListener('click', () => {
+    musicFunc()
+});
+playButton.addEventListener('click', () => {
+    musicFunc()
+});
       
 function getName() {
     const params = new URLSearchParams(window.location.search);
@@ -35,7 +45,8 @@ function showName(guestName) {
 function yesButton() {
     const sections = [section1, section2, section3];
 
-
+    music.play();
+    pauseButton.style.setProperty("display", "flex", "important");
 
     thanksCard.style.setProperty("display", "flex", "important");
     thanksCard.classList.add('animate');
@@ -44,16 +55,26 @@ function yesButton() {
             sections.forEach(section => {
         section.style.setProperty("visibility", "visible", "important");
         section.style.setProperty("display", "flex", "important");
-        section.style.setProperty("display", "flex", "important");
     });
       section1.scrollIntoView({
         behavior: "smooth"
-        });
+      });
+        
+        thanksCard.style.setProperty("display", "none", "important");
 }, 3000); // time in milliseconds
-
-
 }
 
+function musicFunc() {
+    if (!music.paused) {
+        music.pause();
+        pauseButton.style.setProperty("display", "none", "important");
+        playButton.style.setProperty("display", "flex", "important");
+    } else {
+        music.play();
+        pauseButton.style.setProperty("display", "flex", "important");
+        playButton.style.setProperty("display", "none", "important");
+    }
+}
 
 const guestName = getName()
 showName(guestName)
