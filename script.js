@@ -21,6 +21,14 @@ pauseButton.addEventListener('click', () => {
 playButton.addEventListener('click', () => {
     musicFunc()
 });
+
+const loader = document.querySelector('.loaderDiv')
+const main = document.querySelector('.main')
+
+window.onload = () => {
+    loader.style.display = "none"
+    main.style.display = "block";
+}
       
 function getName() {
     const params = new URLSearchParams(window.location.search);
