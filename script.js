@@ -160,15 +160,16 @@ function showSections(){
 // animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry.isIntersecting);
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
-            entry.target.classList.remove('show');
+            entry.target.classList.remove('show'); // remove if you want replay
         }
-        
     });
-});
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.observed').forEach((el) => observer.observe(el));
+
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((element) => observer.observe(element));

@@ -639,18 +639,20 @@ body{
 
 /* scroll animation */
 
-.hidden{
+/* Initial state before animation */
+.observed {
     opacity: 0;
-    transition: all 1s;
+    transform: translateY(100px);
 }
 
-.show{
-    opacity: 1;
+/* Animated state */
+.observed.show {
+    animation: slide-in-bottom 1s ease-in-out forwards;
 }
 
 @keyframes slide-in-bottom {
     0% {
-        transform: translateY(1000px);
+        transform: translateY(100px);
         opacity: 0;
     }
 
@@ -659,7 +661,6 @@ body{
         opacity: 1;
     }
 }
-
 
 /* media queries */
 
