@@ -42,6 +42,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 80rem;
+    margin-top: -10rem;
 }
 
 .mainContent{
@@ -344,6 +345,7 @@ body{
         height: 50rem;
         background-position-y: 0;
         background-size: 100% 85%;
+        margin-top: unset;
     }
 
     .mainContent{
@@ -629,18 +631,16 @@ body{
 }
 }
 
-/* .infoSection2 {
-    background-size: 100%;
-} */
+
 
 @media (min-width: 1050px) {
 .welcomeSection{
     background-size: 65%;
 }
 
-/* .infoSection2 {
-    background-size: 100%;
-} */
+.cakeFlowersImgDesktop{
+    width: 50rem;
+}
 }
 @media (min-width: 1250px) {
 .welcomeSection{
@@ -649,6 +649,10 @@ body{
 
 .infoSection3{
     background-size: 100%;
+}
+
+.cakeFlowersImgDesktop {
+    width: 60rem;
 }
 
 
@@ -664,7 +668,7 @@ body{
 } */
 
 .infoSection3 {
-    background-size: 80%;
+    background-size: 85% 85%;
 }
 
 
@@ -674,7 +678,5 @@ body{
     background-size: 36%;
 }
 
-/* .infoSection2 {
-    background-size: 80%;
-} */
+
 }
