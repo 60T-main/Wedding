@@ -45,7 +45,8 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         loader.style.display = "none";
         main.style.display = "block";
-    }, 1000); 
+        AOS.refresh();
+    }, 2000); 
 });
       
 function getName() {
@@ -155,6 +156,14 @@ function showSections(){
         section.style.setProperty("display", "flex", "important");
     });
 }
+
+
+// animation
+
+  AOS.init({
+    duration: 1200,  // animation duration in ms
+    once: false       // only animate once (no repeat on scroll)
+  });
 
 const guestName = getName()
 showName(guestName)
