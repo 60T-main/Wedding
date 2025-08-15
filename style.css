@@ -640,14 +640,21 @@ body{
 /* scroll animation */
 
 [data-aos="slide-in-bottom"] {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    will-change: transform, opacity;
     opacity: 0;
-    /* hidden before scroll */
-    transition-property: opacity, transform;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 [data-aos="slide-in-bottom"].aos-animate {
     animation: slide-in-bottom 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    opacity: 1;
+    transform: translateY(0);
 }
+
+
 
 @keyframes slide-in-bottom {
     0% {
