@@ -82,7 +82,7 @@ function yesButton() {
     const y = section1.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     setTimeout(() => {
-            showSections();
+        showSections();
         window.scrollTo({ top: y, behavior: "smooth" });
         
         thanksCard.style.setProperty("display", "none", "important");
