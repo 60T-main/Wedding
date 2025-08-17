@@ -11,9 +11,7 @@ section3 = document.querySelector('.infoSection3');
 
 const sections = [section1, section2, section3];
 
-if (localStorage.getItem("yesClicked")) {
-    showSections();
-};
+checkIfSaidYes()
 
 const thanksCard = document.querySelector('.thanksCard');
 const sorryCard = document.querySelector('.sorryCard');
@@ -47,6 +45,13 @@ window.addEventListener("load", () => {
         main.style.display = "block";
     }, 2000); 
 });
+
+
+function checkIfSaidYes() {
+    if (localStorage.getItem("yesClicked")) {
+    showSections();
+};
+}
       
 function getName() {
     const params = new URLSearchParams(window.location.search);
@@ -77,7 +82,6 @@ function yesButton() {
 
     thanksCard.style.setProperty("display", "flex", "important");
     thanksCard.classList.add('animate');
-    
 
     setTimeout(() => {
             showSections();
