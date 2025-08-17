@@ -17,7 +17,7 @@ main{
 
 .loaderDiv{
     display: flex;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 
@@ -275,16 +275,20 @@ body{
     }
 }
 
+.stickyWrapper{
+    position: sticky;
+    top: 3%;
+    z-index: 1000;
+}
+
 .pauseButton, .playButton{
     display: none;
     position: absolute;
-    /* visibility: hidden; */
     cursor: pointer;
-    top: 7%;
+    align-items: center;
+    justify-content: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    
 }
 
 .pauseButton img, .playButton img{

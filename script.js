@@ -78,11 +78,12 @@ function yesButton() {
     thanksCard.style.setProperty("display", "flex", "important");
     thanksCard.classList.add('animate');
 
+    const yOffset = -100;
+    const y = section1.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
     setTimeout(() => {
             showSections();
-      section1.scrollIntoView({
-        behavior: "smooth"
-      });
+        window.scrollTo({ top: y, behavior: "smooth" });
         
         thanksCard.style.setProperty("display", "none", "important");
 }, 5000); 
